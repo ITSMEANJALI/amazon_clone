@@ -1,12 +1,556 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Amazon.in Header</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .amazon-header {
+            display: flex;
+            align-items: center;
+            background-color: black;
+            color: rgb(17, 14, 14);
+            padding: 10px 20px;
+        }
+
+        .header-logo img {
+            width: 100px;
+        }
+
+        .header-search {
+            flex-grow: 1;
+            display: flex;
+            align-items: center;
+            margin: 0 20px;
+        }
+
+        .header-search input {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 4px 0 0 4px;
+            outline: none;
+        }
+
+        .header-search button {
+            padding: 10px;
+            border: none;
+            background-color: #febd69;
+            border-radius: 0 4px 4px 0;
+            cursor: pointer;
+        }
+
+        .header-nav {
+            display: flex;
+            align-items: center;
+        }
+
+        .header-nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+            position: relative;
+        }
+
+        .header-nav a:hover {
+            text-decoration: underline;
+        }
+
+
+        .box4 {
+
+            background-color: rgb(238, 240, 234);
+
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            gap: 2%;
+            width: 50.5%;
+            padding: 45px 10px 10px 10px;
+        }
+
+        .box2 {
+            background-color: rgb(233, 233, 233);
+            padding: 45px 10px 10px 10px;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 2%;
+            width: 50.5%;
+            flex-wrap: wrap;
+        }
+
+        .box3 {
+            background-color: rgb(233, 233, 233);
+            padding: 45px 10px 10px 10px;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 2%;
+            width: 50.5%;
+            flex-wrap: wrap;
+        }
+
+        .box5 {
+            background-color: rgb(248, 243, 243);
+            padding: 45px 10px 10px 10px;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 2%;
+            width: 50.5%;
+            flex-wrap: wrap;
+
+        }
+
+        .anni {
+            display: grid;
+            text-align: center;
+        }
+
+
+        .container {
+            background-color: rgb(237, 238, 237);
+            display: flex;
+            justify-content: right;
+            gap: 2%;
+            margin-top: -350px;
+
+        }
+
+        .box5>img {
+            align-self: center;
+
+        }
+
+        /*2 boxes css */
+
+        .box11 {
+
+            background-color: rgb(238, 240, 234);
+
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            gap: 2%;
+            width: 50.5%;
+            padding: 45px 10px 10px 10px;
+        }
+
+        .box12 {
+            background-color: rgb(233, 233, 233);
+            padding: 45px 10px 10px 10px;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 2%;
+            width: 50.5%;
+            flex-wrap: wrap;
+        }
+
+        .box13 {
+            background-color: rgb(233, 233, 233);
+            padding: 45px 10px 10px 10px;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 2%;
+            width: 50.5%;
+            flex-wrap: wrap;
+        }
+
+        .box15 {
+            background-color: rgb(248, 243, 243);
+            padding: 45px 10px 10px 10px;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 2%;
+            width: 50.5%;
+            flex-wrap: wrap;
+
+        }
+
+        .anni {
+            display: grid;
+            text-align: center;
+        }
+
+
+        .container1 {
+            background-color: rgb(237, 238, 237);
+            display: flex;
+            justify-content: right;
+            gap: 2%;
+
+
+        }
+
+        .box5>img {
+            align-self: center;
+
+        }
+
+        .box15{
+            width: 100%;
+        }
+
+
+        /*Other content of the page*/
+
+
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        
+        .amazon-footer {
+            background-color: #232f3e;
+            color: white;
+            padding: 20px 0;
+        }
+        
+        .footer-top {
+            display: flex;
+            justify-content: space-around;
+            padding: 20px;
+            border-bottom: 1px solid #3a4553;
+        }
+        
+        .footer-column {
+            flex: 1;
+            margin: 0 20px;
+        }
+        
+        .footer-column h4 {
+            margin-bottom: 10px;
+        }
+        
+        .footer-column ul {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .footer-column ul li {
+            margin-bottom: 8px;
+        }
+        
+        .footer-column ul li a {
+            color: white;
+            text-decoration: none;
+        }
+        
+        .footer-column ul li a:hover {
+            text-decoration: underline;
+        }
+        
+        .footer-bottom {
+            text-align: center;
+            padding: 10px;
+        }
+        
+        .footer-bottom p {
+            margin: 0;
+        }
+        
+
+
+
+
+
+    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-    <h1>welcome to my first project</h1>
-    
+    <header class="amazon-header">
+        <div class="header-logo">
+            <a href="#"><img
+                    src="https://upload.wikimedia.org/wikipedia/donate/thumb/f/fd/Amazon-logo-white.svg/1024px-Amazon-logo-white.svg.png"
+                    alt="Amazon Logo"></a>
+        </div>
+        <div class="header-search">
+            <input type="text" placeholder="Search Amazon.in">
+            <button type="button">🔍</button>
+        </div>
+        <div class="header-nav">
+            <a href="#">Hello, Sign in</a>
+            <a href="#">Returns & Orders</a>
+            <a href="#">Cart</a>
+        </div>
+    </header>
+    <div>
+        <img src="https://m.media-amazon.com/images/I/71YTsbTxBsL._SX3000_.jpg" alt="bener" style=" width:1920px">
+    </div>
+
+    <br>
+    <div class="container">
+        <div class="box4">
+            <div style="width: 49%;">
+
+                <img src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2021/June/Fuji_Quad_Headset_1x._SY116_CB667159060_.jpg"
+                    style="height: 90px; width:100px" alt="Headsets">
+                <h5>Headsets</h5>
+            </div>
+
+            <div style="width: 49%;">
+                <img src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2021/June/Fuji_Quad_Keyboard_1x._SY116_CB667159063_.jpg"
+                    style="height: 90px; width:100px" alt="keybord">
+                <h5>keybord</h5>
+            </div>
+
+            <div style="width: 49%;">
+                <img src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2021/June/Fuji_Quad_Mouse_1x._SY116_CB667159063_.jpg"
+                    style="height: 90px; width:100px" alt="Computer mice">
+                <h5>Computer mice</h5>
+            </div>
+
+            <div style="width: 49%;">
+                <img src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2021/June/Fuji_Quad_Chair_1x._SY116_CB667159060_.jpg"
+                    style="height: 90px; width:100px" alt="chair">
+                <h5>chair</h5>
+            </div>
+        </div>
+
+        <div class="box2">
+            <div style="width: 49%;">
+                <img src="https://images-na.ssl-images-amazon.com/images/G/01/AMAZON_FASHION/2022/SITE_FLIPS/SPR_22/GW/DQC/DQC_APR_TBYB_W_BOTTOMS_1x._SY116_CB624172947_.jpg"
+                    style="height: 90px; width:100px" alt="Headsets">
+                <h5>Jeans under $50</h5>
+            </div>
+
+            <div style="width: 49%;">
+                <img src="https://images-na.ssl-images-amazon.com/images/G/01/AMAZON_FASHION/2022/SITE_FLIPS/SPR_22/GW/DQC/DQC_APR_TBYB_W_TOPS_1x._SY116_CB623353881_.jpg"
+                    style="height: 90px; width:100px" alt="keybord">
+                <h5>Jeans under $50</h5>
+            </div>
+
+            <div style="width: 49%;">
+                <img src="https://images-na.ssl-images-amazon.com/images/G/01/AMAZON_FASHION/2022/SITE_FLIPS/SPR_22/GW/DQC/DQC_APR_TBYB_W_DRESSES_1x._SY116_CB623353881_.jpg"
+                    style="height: 90px; width:100px" alt="Computer mice">
+                <h5>Dresses under $30</h5>
+
+            </div>
+
+            <div style="width: 49%;">
+                <img src="https://images-na.ssl-images-amazon.com/images/G/01/AMAZON_FASHION/2022/SITE_FLIPS/SPR_22/GW/DQC/DQC_APR_TBYB_W_SHOES_1x._SY116_CB624172947_.jpg"
+                    style="height: 90px; width:100px" alt="chair">
+                <h5>Shoes under $50</h5>
+            </div>
+        </div>
+
+
+        <div class="box3">
+            <div style="width: 49%;">
+                <img src="https://images-na.ssl-images-amazon.com/images/G/01/launchpad/2023/Gateway/January/DesktopQuadCat_186x116_LP-HP_B08MYX5Q2W_01.23._SY116_CB619238939_.jpg"
+                    style="height: 90px; width:100px" alt="Headsets">
+                <h5>Dining</h5>
+            </div>
+
+            <div style="width: 49%;">
+                <img src="https://images-na.ssl-images-amazon.com/images/G/01/launchpad/2023/Gateway/January/DesktopQuadCat_186x116_home_B08RCCP3HV_01.23._SY116_CB619238939_.jpg"
+                    style="height: 90px; width:100px" alt="keybord">
+                <h5>Home</h5>
+            </div>
+
+            <div style="width: 49%;">
+                <img src="https://images-na.ssl-images-amazon.com/images/G/01/launchpad/2023/Gateway/January/DesktopQuadCat_186x116_kitchen_B0126LMDFK_01.23._SY116_CB619238939_.jpg"
+                    style="height: 90px; width:100px" alt="Computer mice">
+                <h5>Kitchen</h5>
+            </div>
+
+            <div style="width: 49%;">
+                <img src="https://images-na.ssl-images-amazon.com/images/G/01/launchpad/2023/Gateway/January/DesktopQuadCat_186x116_health-beauty_B07662GN57_01.23._SY116_CB619238939_.jpg"
+                    style="height: 90px; width:100px" alt="chair">
+                <h5>Health and Beauty</h5>
+            </div>
+        </div>
+
+        <div class="box5">
+            <div class="anni">
+                <img src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Events/2023/EBF23/Fuji_Desktop_Single_image_EBF_1x_v1._SY304_CB573698005_.jpg"
+                    alt="Headsets">
+                <h5>DJ</h5>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!-- 2 line boxes -->
+
+    <br>
+
+    <div class="container1">
+        <div class="box11">
+            <div style="width: 49%;">
+
+                <img src="https://m.media-amazon.com/images/I/41aF1Kpc1iL._SY160_.jpg" style="height: 90px; width:100px"
+                    alt="Headsets">
+                <h5>Smartphones</h5>
+            </div>
+
+            <div style="width: 49%;">
+                <img src="https://m.media-amazon.com/images/I/316r7290SLL._SY75_.jpg" style="height: 90px; width:100px"
+                    alt="keybord">
+                <h5>Tablets</h5>
+            </div>
+
+            <div style="width: 49%;">
+                <img src="https://m.media-amazon.com/images/I/31qcGgiIK7L._SY75_.jpg" style="height: 90px; width:100px"
+                    alt="Computer mice">
+                <h5>Laptops</h5>
+            </div>
+
+            <div style="width: 49%;">
+                <img src="https://m.media-amazon.com/images/I/313zteqI9LL._SY75_.jpg" style="height: 90px; width:100px"
+                    alt="chair">
+                <h5>TVs</h5>
+            </div>
+        </div>
+
+        <div class="box12">
+            <div style="width: 49%;">
+                <img src="https://images-na.ssl-images-amazon.com/images/G/01/DiscoTec/2024/1H/FDAY/GW/QuadCard/FD_2024_304_GW_DesktopQuadCard_Deals_186x116_1x._SY116_CB582858223_.jpg"
+                    style="height: 90px; width:100px" alt="Headsets">
+                <h5>Tech</h5>
+            </div>
+
+            <div style="width: 49%;">
+                <img src="https://images-na.ssl-images-amazon.com/images/G/01/DiscoTec/2024/1H/FDAY/GW/QuadCard/FD_2024_306_GW_DesktopQuadCard_Deals_186x116_1x._SY116_CB582858223_.jpg"
+                    style="height: 90px; width:100px" alt="keybord">
+                <h5>Adventure gear</h5>
+            </div>
+
+            <div style="width: 49%;">
+                <img src="https://images-na.ssl-images-amazon.com/images/G/01/DiscoTec/2024/1H/FDAY/GW/QuadCard/FD_2024_307_GW_DesktopQuadCard_Deals_186x116_1x._SY116_CB582858223_.jpg"
+                    style="height: 90px; width:100px" alt="Computer mice">
+                <h5>Unique finds</h5>
+
+            </div>
+
+            <div style="width: 49%;">
+                <img src="https://images-na.ssl-images-amazon.com/images/G/01/DiscoTec/2024/1H/FDAY/GW/QuadCard/FD_2024_305_GW_DesktopQuadCard_Deals_186x116_1x._SY116_CB582858223_.jpg"
+                    style="height: 90px; width:100px" alt="chair">
+                <h5>Health & wellness</h5>
+            </div>
+        </div>
+
+
+        <div class="box13">
+            <div style="width: 49%;">
+                <img src="https://images-na.ssl-images-amazon.com/images/G/01/AMAZON_FASHION/2023/LuxuryStores/Spring-23/GW/Quad_Cards/Spring/LSS23_SPRING_DT_CAT_CARD_2_x1._SY116_CB595261253_.jpg"
+                    style="height: 90px; width:100px" alt="Headsets">
+                <h5>Dresses</h5>
+            </div>
+
+            <div style="width: 49%;">
+                <img src="https://images-na.ssl-images-amazon.com/images/G/01/AMAZON_FASHION/2023/LuxuryStores/Spring-23/GW/Quad_Cards/Spring/LSS23_SPRING_DT_CAT_CARD_3_x1._SY116_CB595261253_.jpg"
+                    style="height: 90px; width:100px" alt="keybord">
+                <h5>Knits</h5>
+            </div>
+
+            <div style="width: 49%;">
+                <img src="https://images-na.ssl-images-amazon.com/images/G/01/AMAZON_FASHION/2023/LuxuryStores/Spring-23/GW/Quad_Cards/Spring/LSS23_SPRING_DT_CAT_CARD_1_x1._SY116_CB595261253_.jpg"
+                    style="height: 90px; width:100px" alt="Computer mice">
+                <h5>Jackets</h5>
+            </div>
+
+            <div style="width: 49%;">
+                <img src="https://images-na.ssl-images-amazon.com/images/G/01/AMAZON_FASHION/2023/LuxuryStores/Spring-23/GW/Quad_Cards/Spring/LSS23_SPRING_DT_CAT_CARD_4_x1._SY116_CB595261253_.jpg"
+                    style="height: 90px; width:100px" alt="chair">
+                <h5>Jewelry</h5>
+            </div>
+        </div>
+
+        <div class="box14">
+            <div class="anni">
+                <img src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Events/2023/EBF23/Fuji_Desktop_Single_image_EBF_1x_v3._SY304_CB573698005_.jpg"
+                    alt="Headsets">
+                <h5>Teddy</h5>
+            </div>
+        </div>
+
+    </div>
+    <div class="box15">
+
+        <div><img src="https://m.media-amazon.com/images/I/71ZNyTPaV1L._AC_SY200_.jpg" alt=""></div>
+        <div><img src="https://m.media-amazon.com/images/I/71VqZh-HhoL._AC_SY200_.jpg" alt=""></div>
+        <div><img src="https://m.media-amazon.com/images/I/610O8r8RBYL._AC_SY200_.jpg" alt=""></div>
+        <div><img src="https://m.media-amazon.com/images/I/81GzkVqOY6L._AC_SY200_.jpg" alt=""></div>
+
+    </div>
+
+
+
+    <!-- Other content of the page -->
+
+    <footer class="amazon-footer">
+        <div class="footer-top">
+            <div class="footer-column">
+                <h4>Get to Know Us</h4>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Press Releases</a></li>
+                    <li><a href="#">Amazon Cares</a></li>
+                    <li><a href="#">Gift a Smile</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Connect with Us</h4>
+                <ul>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Twitter</a></li>
+                    <li><a href="#">Instagram</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Make Money with Us</h4>
+                <ul>
+                    <li><a href="#">Sell on Amazon</a></li>
+                    <li><a href="#">Sell under Amazon Accelerator</a></li>
+                    <li><a href="#">Amazon Global Selling</a></li>
+                    <li><a href="#">Become an Affiliate</a></li>
+                    <li><a href="#">Fulfilment by Amazon</a></li>
+                    <li><a href="#">Advertise Your Products</a></li>
+                    <li><a href="#">Amazon Pay on Merchants</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Let Us Help You</h4>
+                <ul>
+                    <li><a href="#">COVID-19 and Amazon</a></li>
+                    <li><a href="#">Your Account</a></li>
+                    <li><a href="#">Returns Centre</a></li>
+                    <li><a href="#">100% Purchase Protection</a></li>
+                    <li><a href="#">Amazon App Download</a></li>
+                    <li><a href="#">Amazon Assistant Download</a></li>
+                    <li><a href="#">Help</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024, Amazon.in, Inc. or its affiliates</p>
+        </div>
+    </footer>
+
 </body>
+
 </html>
